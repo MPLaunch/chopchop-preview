@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Chop Chopps Barbershop — Celine Kaponias · Underdale, Adelaide</title>
+<meta name="description" content="Chop Chopps Barbershop in Underdale, Adelaide. Precision cuts, fades and beard work by Celine Kaponias — National Educator and Barber Battle host. Book your chair." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b0d;--panel:#131316;--panel2:#1a1a1e;--line:#28282d;
+  --ink:#f1efeb;--muted:#98948c;--accent:#e23744;--accent-soft:#ff5a66;
+  --display:"Bebas Neue",Impact,sans-serif;--sans:"Inter",-apple-system,Segoe UI,Roboto,sans-serif;
+  --shadow:0 30px 70px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip;max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;letter-spacing:.02em;line-height:.94;text-transform:uppercase}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#0e0e10;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:15px 26px;border-radius:2px;border:none;cursor:pointer;font-family:var(--sans);transition:.18s}
+.btn:hover{background:#fff;transform:translateY(-1px)}
+.btn.line{background:transparent;color:var(--ink);border:1px solid #3a3a40}
+.btn.line:hover{border-color:var(--ink);background:transparent}
+
+/* marquee */
+.marq{background:#000;border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap}
+.marq div{display:inline-block;padding:9px 0;animation:sc 28s linear infinite;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.marq span{margin:0 26px}.marq b{color:var(--accent)}
+@keyframes sc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(11,11,13,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--display);font-size:26px;letter-spacing:.08em}
+.logo b{color:var(--accent);font-weight:400}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);transition:.2s}
+.menu a:hover{color:var(--ink)}
+
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.03) saturate(.96)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,10,.95) 4%,rgba(8,8,10,.45) 42%,rgba(8,8,10,.55) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:60px;width:100%}
+.hero h1{font-size:clamp(58px,11vw,150px);margin:16px 0 0}
+.hero h1 .r{color:var(--accent)}
+.hero p{max-width:46ch;color:#e8e4dc;font-size:18px;margin:20px 0 26px}
+.hcta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid #33333a;border-radius:2px;padding:9px 14px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#cfccc4;background:rgba(0,0,0,.25)}
+.chip b{color:var(--accent)}
+
+/* generic section */
+.section{padding:84px 0}
+.khead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.khead h2{font-size:clamp(38px,6vw,74px)}
+.khead p{color:var(--muted);max-width:40ch;margin:0}
+.lead{font-size:clamp(22px,2.7vw,30px);line-height:1.3;font-family:var(--sans);font-weight:500;letter-spacing:-.01em;max-width:24ch}
+.lead .a{color:var(--accent)}
+
+/* craft split */
+.craft{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.craft .p img{border-radius:3px;box-shadow:var(--shadow);filter:grayscale(1) contrast(1.05)}
+.craft h2{font-size:clamp(40px,5vw,66px);margin-bottom:18px}
+.craft .body p{color:#c9c5bc;margin:0 0 14px}
+.credrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cred{border:1px solid var(--line);border-radius:2px;padding:10px 14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#d8d4cb}
+.cred b{color:var(--accent)}
+
+/* gallery */
+.gallery{columns:3;column-gap:14px}
+figure.shot{break-inside:avoid;margin:0 0 14px;position:relative;overflow:hidden;border-radius:3px;background:var(--panel)}
+figure.shot img{width:100%;transition:transform .6s ease}
+figure.shot:hover img{transform:scale(1.05)}
+figure.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 13px;background:linear-gradient(to top,rgba(7,7,9,.9),transparent);opacity:0;transition:.3s;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#ece8e0}
+figure.shot:hover figcaption{opacity:1}
+
+/* shop band */
+.shop{background:linear-gradient(180deg,#100f12,#0b0b0d);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.shopgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:16px}
+.shopgrid .tall{grid-row:span 2}
+.shopgrid img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.shopinfo{display:flex;flex-direction:column;justify-content:center;gap:8px}
+.shopinfo h2{font-size:clamp(36px,5vw,60px)}
+.shopinfo p{color:var(--muted);margin:4px 0 0}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:0 44px}
+.svc .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.svc .row .n{font-family:var(--display);font-size:26px;letter-spacing:.03em}
+.svc .row .d{color:var(--muted);font-size:13.5px;flex:1;margin:0 14px}
+.svc .row .pr{font-family:var(--display);font-size:24px;color:var(--accent);white-space:nowrap}
+.svcnote{color:var(--muted);font-size:13.5px;margin-top:22px}
+
+/* book */
+.book{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:44px}
+.book h2{font-size:clamp(38px,5vw,60px);margin-bottom:8px}
+.book p{color:var(--muted)}
+.book .addr{margin:18px 0}
+.book .addr b{display:block;font-size:18px;color:var(--ink)}
+.bkbtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.field{margin-bottom:13px}
+.field label{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.field input,.field textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:3px;color:var(--ink);padding:12px 14px;font-family:var(--sans);font-size:15px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+.foot a{color:var(--accent-soft)}
+.ribbon{position:fixed;left:14px;bottom:14px;z-index:60;background:rgba(11,11,13,.9);border:1px solid var(--line);color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:2px}
+.ribbon b{color:var(--ink)}
+
+@media(max-width:900px){
+  .gallery{columns:2}
+  .craft,.shopgrid,.svc,.book{grid-template-columns:1fr}
+  .craft .p{order:-1}
+  .menu{display:none}
+}
+@media(max-width:560px){.gallery{columns:1}}
+</style>
+</head>
+<body>
+<a id="top"></a>
+
+<div class="marq"><div>
+  <span>Chop Chopps Barbershop</span><b>•</b><span>Underdale · Adelaide</span><b>•</b><span>National Educator — 4 Barbers</span><b>•</b><span>BaByliss Pro · Barber Battle Host</span><b>•</b><span>Precision Cuts &amp; Fades</span><b>•</b>
+  <span>Chop Chopps Barbershop</span><b>•</b><span>Underdale · Adelaide</span><b>•</b><span>National Educator — 4 Barbers</span><b>•</b><span>BaByliss Pro · Barber Battle Host</span><b>•</b><span>Precision Cuts &amp; Fades</span><b>•</b>
+</div></div>
+
+<header><div class="wrap nav">
+  <a class="logo" href="#top">CHOP <b>CHOPPS</b></a>
+  <nav class="menu">
+    <a href="#work">The Work</a>
+    <a href="#shop">The Shop</a>
+    <a href="#services">Services</a>
+    <a href="#book">Book</a>
+  </nav>
+  <a class="btn" href="#book">Book your chair</a>
+</div></header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="img/hero.jpg" alt="Chop Chopps Barbershop — precision cut" />
+  <div class="wrap">
+    <span class="eyebrow">Underdale · Adelaide</span>
+    <h1>Adelaide's<br>barber's <span class="r">barber.</span></h1>
+    <p>Precision cuts, clean fades and sharp beard work by Celine Kaponias — one of Adelaide's most recognised barbers and a national barbering educator.</p>
+    <div class="hcta">
+      <a class="btn" href="#book">Book your chair</a>
+      <a class="btn line" href="#work">See the work</a>
+    </div>
+    <div class="chips">
+      <span class="chip"><b>15.7K</b> on Instagram</span>
+      <span class="chip">National Educator · <b>4 Barbers</b></span>
+      <span class="chip">Barber Battle Host</span>
+    </div>
+  </div>
+</section>
+
+<!-- CRAFT -->
+<section class="section wrap" id="about">
+  <div class="craft">
+    <div class="body">
+      <span class="eyebrow">The barber</span>
+      <h2>Celine<br>Kaponias</h2>
+      <p>Chop Chopps isn't a production line. Every cut is done with intent — the right shape for your hair, your face and the way you actually wear it, finished sharp enough to still look good a week later.</p>
+      <p>Celine is a National Educator for 4 Barbers Australia, a BaByliss Pro–backed Barber Battle host, and a barber other barbers come to learn from. When you sit in the chair, that's who's behind the clippers.</p>
+      <div class="credrow">
+        <span class="cred"><b>National</b> Educator</span>
+        <span class="cred"><b>Ambassador</b></span>
+        <span class="cred">Barber <b>Battle</b> Host</span>
+        <span class="cred"><b>15.7K</b> Following</span>
+      </div>
+    </div>
+    <div class="p"><img src="img/portrait.jpg" alt="Celine Kaponias, Chop Chopps Barbershop" /></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section wrap" id="work">
+  <div class="khead">
+    <div><span class="eyebrow">Recent work</span><h2>The Work</h2></div>
+    <p>A look at what walks out of the chair — real cuts, real clients, straight off the floor.</p>
+  </div>
+  <div class="gallery">
+    <figure class="shot"><img src="img/cut4.jpg" alt="Textured men's cut"><figcaption>Textured crop &amp; fade</figcaption></figure>
+    <figure class="shot"><img src="img/cut1.jpg" alt="Skin fade with beard"><figcaption>Skin fade &amp; beard</figcaption></figure>
+    <figure class="shot"><img src="img/action.jpg" alt="Barber at work"><figcaption>In the chair</figcaption></figure>
+    <figure class="shot"><img src="img/cut2.jpg" alt="Modern textured cut"><figcaption>Textured mod cut</figcaption></figure>
+    <figure class="shot"><img src="img/cut5.jpg" alt="Blonde tapered cut"><figcaption>Colour &amp; taper</figcaption></figure>
+    <figure class="shot"><img src="img/cut3.jpg" alt="Curly top with fade"><figcaption>Curly top &amp; fade</figcaption></figure>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="shop">
+  <div class="section wrap">
+    <div class="shopgrid">
+      <img class="tall" src="img/shop1.jpg" alt="Inside Chop Chopps Barbershop">
+      <img src="img/detail.jpg" alt="Professional clippers">
+      <div class="shopinfo">
+        <span class="eyebrow">The shop</span>
+        <h2>Step inside</h2>
+        <p>152 Ashley St, Underdale — a proper barbershop chair, good music and a cut that's worth the trip across Adelaide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section wrap" id="services">
+  <div class="khead">
+    <div><span class="eyebrow">The menu</span><h2>Services</h2></div>
+    <p>Live times and full pricing are in the booking app — here's the short version.</p>
+  </div>
+  <div class="svc">
+    <div class="row"><span class="n">Signature Cut</span><span class="d">Men's cut &amp; style, consult included</span><span class="pr">from $80</span></div>
+    <div class="row"><span class="n">Skin Fade</span><span class="d">Sharp, blended, clean lines</span><span class="pr">from $80</span></div>
+    <div class="row"><span class="n">Cut &amp; Beard</span><span class="d">Full cut plus beard sculpt &amp; line-up</span><span class="pr">enquire</span></div>
+    <div class="row"><span class="n">Beard Sculpt</span><span class="d">Shape, line-up &amp; finish</span><span class="pr">enquire</span></div>
+    <div class="row"><span class="n">Student / U16</span><span class="d">Same cut, student rate</span><span class="pr">enquire</span></div>
+    <div class="row"><span class="n">Education</span><span class="d">1:1 &amp; group barber education</span><span class="pr">enquire</span></div>
+  </div>
+  <p class="svcnote">Prices shown are a guide. Confirm the current menu and availability when you book.</p>
+</section>
+
+<!-- BOOK -->
+<section class="section wrap" id="book">
+  <div class="book">
+    <div>
+      <span class="eyebrow">Get in the chair</span>
+      <h2>Book at Chop Chopps</h2>
+      <p>Chairs go quick. Book through the app or send a message and Celine's team will lock you in.</p>
+      <div class="addr">
+        <b>152 Ashley St, Underdale SA</b>
+        <span style="color:var(--muted)">Adelaide, South Australia</span>
+      </div>
+      <div class="bkbtns">
+        <a class="btn" href="https://apps.apple.com/app/id1568309194" target="_blank" rel="noopener">Book on the app</a>
+        <a class="btn line" href="https://www.instagram.com/chopchopps__/" target="_blank" rel="noopener">Message on Instagram</a>
+      </div>
+    </div>
+    <form onsubmit="return demoSubmit()">
+      <div class="field"><label>Name</label><input type="text" placeholder="Your name"></div>
+      <div class="field"><label>Mobile</label><input type="tel" placeholder="04.."></div>
+      <div class="field"><label>What are you after?</label><textarea rows="3" placeholder="Skin fade + beard, Saturday if possible…"></textarea></div>
+      <button class="btn" type="submit" style="width:100%">Request a booking</button>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap foot">
+  <div>© <span id="yr"></span> Chop Chopps Barbershop · Underdale SA · <a href="https://www.instagram.com/chopchopps__/" target="_blank" rel="noopener">@chopchopps__</a></div>
+  <div>Website by <a href="https://mplaunch.com.au" target="_blank" rel="noopener">MP Launch</a></div>
+</div></footer>
+
+<div class="ribbon">Design concept · by <b>MP&nbsp;Launch</b></div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+function demoSubmit(){alert("This is a design concept — on your live site this booking request would be sent straight to Chop Chopps.");return false;}
+</script>
+
+<!-- MP Launch preview open-tracking — texts Peter when a lead opens this preview -->
+<script>
+(function(){try{
+  if(navigator.webdriver)return;
+  var slug="chopchop-preview", label="Celine — Chop Chopps Barbershop";
+  var k="mpl_seen_"+slug, last=+localStorage.getItem(k)||0;
+  if(Date.now()-last<432e5)return;
+  localStorage.setItem(k,String(Date.now()));
+  new Image().src="https://mplaunch.com.au/api/preview-view?slug="+encodeURIComponent(slug)+"&label="+encodeURIComponent(label)+"&t="+Date.now();
+}catch(e){}})();
+</script>
+</body>
+</html>
